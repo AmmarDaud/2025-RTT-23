@@ -1,0 +1,30 @@
+// variables 
+@card-width: 300px;
+@card-height: @card-width + 200px;
+@bg-primary: rgb(68, 94, 171);
+@bg-success: rgb(2, 217, 255);
+
+// mixing
+.rounded {
+    border-radius: 10px;
+}
+
+
+#card {
+   width: @card-width;
+   height: @card-height; 
+   background-color: @bg-primary;
+   .rounded();
+   margin-bottom: 20px;
+   padding: 10px;
+   color: #fff;
+}
+
+
+button {
+    background-color: @bg-success;
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    .rounded()
+}

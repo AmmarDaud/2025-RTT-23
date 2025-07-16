@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Finder</title>
+    <link rel="icon" type="image/x-icon" href="/reel.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="Main.js" defer></script>
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen">
+    <div class="container mx-auto p-6">
+      <h1 class="text-4xl font-bold mb-6 text-center">🎬 Movie Finder</h1>
+      <form id="searchForm" class="flex justify-center gap-2 mb-6">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search movies..."
+          class="p-2 rounded bg-gray-700 text-white w-1/2"
+        />
+        <button type="submit" class="p-2 bg-blue-600 rounded hover:bg-blue-700">
+          Search
+        </button>
+      </form>
+      <div
+        id="movieList"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4"
+      ></div>
+    </div>
+  </body>
+</html>

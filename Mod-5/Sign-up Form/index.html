@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container-signup-form">
+      <h2>Create Account</h2>
+      <form novalidate class="form-group-signup" id="signup-form">
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          required
+          minlength="3"
+        />
+        <span class="error-message-signup" id="username-error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+        <span class="error-message-signup" id="email-error"></span>
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          minlength="6"
+        />
+        <span class="error-message-signup" id="password-error"></span>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input
+          type="password"
+          name="confirm-password"
+          id="confirm-password"
+          required
+        />
+        <span class="error-message-signup" id="confirm-password-error"></span>
+
+        <button class="signup-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
